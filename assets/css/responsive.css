@@ -1,0 +1,22 @@
+/* ===== Tablet ===== */
+@media (max-width:992px){
+  .navbar { flex-direction: row; justify-content: space-between; }
+  .hero h1{ font-size:2.2rem; }
+  .hero p{ font-size:1rem; }
+  .services ul,.why-us ul { grid-template-columns:1fr 1fr; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width:768px){
+  .hamburger { display:flex; }
+  .nav-links { display:none; flex-direction:column; width:100%; background:#294952; position:absolute; top:60px; left:0; text-align:center; padding:1rem 0; }
+  .nav-links.active { display:flex; }
+  .nav-links li { margin:0.8rem 0; }
+  .hamburger.active span:nth-child(1){ transform:rotate(45deg) translate(5px,5px); }
+  .hamburger.active span:nth-child(2){ opacity:0; }
+  .hamburger.active span:nth-child(3){ transform:rotate(-45deg) translate(5px,-5px); }
+  .hero h1{ font-size:1.8rem; }
+  .hero p{ font-size:0.95rem; }
+  .hero .btn{ font-size:0.9rem; padding:0.6rem 1.2rem; }
+  .services ul,.why-us ul { grid-template-columns:1fr; }
+}
